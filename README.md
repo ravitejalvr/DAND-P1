@@ -15,7 +15,9 @@ Cabin is ignored from future analysis as it is having major data missing.
 
 ## Answers: 
 1.30.67%
+
 2.63.82%
+
 3.72.3%
 
 It can be understood that people who are young and people who paid large were rescued first. 
