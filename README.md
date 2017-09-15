@@ -44,6 +44,14 @@ Also, a histogram combining Sex and Passenger Class is generated and it is seen 
 
 It can be understood that females who are from higher classes were rescued first. Also, age is not clearly a barrier and the distinguishing feature is Passenger Class and Fare. Also, place of embark is having a slight impact and people who embarked from Q had slighly better survival rates.
 
+The above conclusions made are only based on less data available. (<30%) If total data is analyzed, we might find key insights on survival rate. Particularly the Age not being a crucial factor is of particular interest. 
+
+Even for predicting the survival rate, the current data is not sufficient for training the Machine Learning / Neural Network model.
+
+Also, the ecenomic class of the people in the ship is not mentioned which might be a differentiating factor. 
+
+The missing values for Age are filled with zero instead of mean value and ommitting as I thought we can analyze the missing age valuesas well without messing with other bins and ommitting them. I found that missing age values are having less than mean survival rates. Also, going by the trend in the data, it can be possible that missing age values are from higher value bins.
+
 It is observed that with increase in fare, survival rate increase, increase in age decreased survival rate & finally
 people from class 1 & 2 have more than twice survival rate than people from class 3.
 
