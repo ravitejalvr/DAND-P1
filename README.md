@@ -40,21 +40,34 @@ Two boxplots were generated for Age and Fare and it can be seen that the distrib
 
 Also, a histogram combining Sex and Passenger Class is generated and it is seen that females from 1st and second class had a really high chance of survival rates (>92%) and males from classes 2 & 3 has <20% survival rates.
 
-## Conclusion:
+## Conclusion
 
-It can be understood that females who are from higher classes were rescued first. Also, age is not clearly a barrier and the distinguishing feature is Passenger Class and Fare. Also, place of embark is having a slight impact and people who embarked from Q had slighly better survival rates.
+### Limitations
 
-The above conclusions made are only based on less data available. (<30%) If total data is analyzed, we might find key insights on survival rate. Particularly the Age not being a crucial factor is of particular interest. 
+The following are some of the limitations of the data given, hence the conclusions drawn from it.
 
-Even for predicting the survival rate, the current data is not sufficient for training the Machine Learning / Neural Network model.
+As shown in IPython notebook attached, 9 columns of data are given to work with, essentially three of them being irrelevant. Additionally, there were only 891 rows of data, of which 179 were missing important fields such as age. Having some more features on the Passengers such as bodyweight (crucial since the lifeboats are space-crunch), race & reason for death (starving / lack of life boats) can be really helpful in further understanding of the disaster. 
 
-Also, the ecenomic class of the people in the ship is not mentioned which might be a differentiating factor. 
+Also, details for various columns and reasons for diving them is not given. For example, Pclass is given but it was not mentioned whats the basis. In titanic, we know there were many different classes based on fare. So, if the class is not dependent on fare, reason for its division needs to be given. 
 
-The missing values for Age are filled with zero instead of mean value and ommitting as I thought we can analyze the missing age valuesas well without messing with other bins and ommitting them. I found that missing age values are having less than mean survival rates. Also, going by the trend in the data, it can be possible that missing age values are from higher value bins.
+Also, if the area of ship which sank first and cabin location of the passengers closeby is given, it would've led to better interpretation of given cabin column.
 
-It is observed that with increase in fare, survival rate increase, increase in age decreased survival rate & finally
-people from class 1 & 2 have more than twice survival rate than people from class 3.
+The impact of various factors is discussed below:
 
-Also, a chi-squared analysis for Age, Fare & P-class is done for understanding the distribution. It is observed that Both Age and Fare had higher statistic and zero p-values. And, Pclass had much lesser statistic and a p-value of 1.
+### Class
 
-These are some of my observations from Titanic Data-Set. For plots and implementation, please visit IPython Notebook.
+Probably, the strongest indicator for survival is Class. It was clearly observed that people from 1class has almost twice survival rates when compared second and third class.
+
+### Gender
+
+As expected, males had less chance of survival rate than women. Its observed that 63.1% of total survived people were females and only 35.2% of total people were females. Females had a survival rate of 74.2%. these numbers prove that Females of al had a much highre chance to survival than men of all ages. 
+
+### Age
+
+As we have seen in plots and analysis, Age is not a huge factor in deciding the survival of a person. This was interesting given that people assume children and older people will be rescued first. 
+
+### Final Conclusion
+
+In conclusion, the strongest evidences for survival are socioeconomic class & Gender. Passenger classis first important reason for survival. Since location and details about the clas were not given, we can discuss more about what is the issue. 
+
+Gender also played a close second. "Women and children" was certainly a phrase that nicely sums up this gender discrepancy. However, Age didn't have any impact with regards to a passenger's survival, which is surprising. This can be the reason that data is biased and not representing total picture but a subsection of it. Since details of total number of passengers and how this data is selected from the master data is not given, we cannot make concrete conclusions but only inferences which can/cannot be true.
